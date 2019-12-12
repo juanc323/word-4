@@ -1,0 +1,22 @@
+/* Empleados */
+
+
+
+.fondo{
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.styldiv1{
+    background-color: #66827B ;
+    color: #ffffff;
+    text-decoration: none;
+}
+.colortext{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.margen1{
+    margin-top: 5rem;
+}
