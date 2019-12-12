@@ -42,7 +42,7 @@
             
             <label for=""><b>Documento</b></label>
             <br>
-            <input type="text" placeholder="1000473..." name="Documento" required class="form-control "> 
+            <input type="text" placeholder="Documento..." name="Documento" required class="form-control "> 
             <br>
             <button class="btn btn-success" type="submit">Registrar Salida</button>    
             <?php  if(isset($_REQUEST['DateExists'])): ?>
