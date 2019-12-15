@@ -18,7 +18,7 @@
                 <h1 class="titulo">Registro entrada y salida</h1>
             </div>
             <div class="col-md-5 offset-md-8">
-                <a href="" class="colortext">Administrador |</a>
+                <a href="?c=administrador&m=crear" class="colortext">Administrador |</a>
                 <a href="?c=consulta&m=index" class="colortext">consultar</a>
             </div>
         </div>
@@ -32,6 +32,9 @@
                 <input type="number" placeholder="1000473..." name="Documento" required class="form-control "> 
                 <br>
                 <button class="btn btn-success">Ingresar</button>
+                <?php  if(isset($_REQUEST['DateFirstExists'])): ?>
+                    <p class="text-danger">El registro ya existe! :(</p>        
+                <?php endif; ?>                
             </form>
         </div>
 

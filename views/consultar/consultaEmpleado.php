@@ -1,3 +1,10 @@
+<?php
+    $Documento = $_POST['Documento'];
+    $usuario = parent::consultarUsuarioPorDocumento($Documento);
+    
+    $horario = parent::consultarHorario($usuario->id_usuarios);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,15 +31,26 @@
             </div>
         </div>
 
+       <center>
         <div class="col-md-5 margen1">
-            <form action="?c=Consulta&m=consulta" method="post">
-                <label for=""><b>Documento</b></label>
-                <br>
-                <input type="number" placeholder="1000473..." name="Documento" required class="form-control"> 
-                <br>
-                <button class="btn btn-success">Ingresar</button>
-            </form>
+            <table class="table table-striped table-bordered ">
+                <tr>
+                    <th>NOMBRE</th>
+                    <th>DOCUMENTO</th>
+                    <th>HORA ENTRADA</th>
+                    <th>HORA SALIDA</th>
+                </tr>
+                <?php foreach($horario as $j){ ?>
+                <tr>
+                    <td><?php echo $j->nombres ?></td>
+                    <td><?php echo $j->documento ?></td>
+                    <td><?php echo $j->entrada ?></td>
+                    <td><?php echo $j->salida ?></td>
+                </tr>
+
+                <?php } ?>
+            </table>
         </div>
-</table>
+        </center>
 </body>
 </html>

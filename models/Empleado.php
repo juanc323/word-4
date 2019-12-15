@@ -19,7 +19,8 @@ class Empleado extends DB{
     
     public function consultarUsuarioPorDocumento($Documento){
         try{
-            $stm=parent::conectar()->prepare("SELECT * FROM usuarios WHERE documento = $Documento " );
+            $stm=parent::conectar()->prepare("SELECT * FROM usuarios WHERE documento = ?");
+            $stm->bindParam(1,$Documento,PDO::PARAM_STR);
             $stm->execute();
             return $stm->fetch(PDO::FETCH_OBJ);
         }catch(exception $e) {

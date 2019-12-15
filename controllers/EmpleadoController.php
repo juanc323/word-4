@@ -17,7 +17,7 @@ class EmpleadoController extends Empleado{
 
 
         if ($fecha == $fecha_consultada->fecha && $Usuario->id_usuarios == $Horario->fk_usuario){
-             echo "ERROR";
+            header("location:?c=Empleado&m=index&DateFirstExists=true");
              }else{
                 parent::stored($Usuario->id_usuarios, $fecha , $hora);
                 header('location:?c=Empleado&m=index');            

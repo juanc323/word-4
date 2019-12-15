@@ -20,3 +20,96 @@
 .margen1{
     margin-top: 5rem;
 }
+
+/* Empleados */
+
+
+
+.fondo{
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.styldiv1{
+    background-color: #66827B ;
+    color: #ffffff;
+    text-decoration: none;
+}
+.colortext{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.margen1{
+    margin-top: 5rem;
+}
+
+/* style de index */
+#h1-index{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    color: white;
+}
+
+#body-index{
+    background-color: black;
+    margin: 0px;
+}
+
+#pie-index{   
+    background-color: #5eb319;
+    margin-top: 6rem;
+    }
+
+#navbar-index{   
+    background-color: #5eb319;
+}
+/* style de login*/
+#form-login{
+    text-align: center;
+    align-items: center;
+}
+
+#buttom-login{
+    margin: 50px;
+    text-decoration: none;
+}
+
+#form-logmpd{
+    margin-top: 15rem;
+}
+
+#nor{
+    background-repeat: no-repeat;
+    background-size: cover;  
+    text-align: center;
+    align-items: center;  
+}
+
+#buttom-loginmpd{
+    margin-top: 5rem;
+    margin-right: 15px;
+
+}
+
+/* administrador-crear */
+
+#form_crearempleado{
+    margin-top: 6rem;
+}
+
+#bodycrear{
+    background-repeat: no-repeat;
+    background-size: cover; 
+    text-align: center;
+    align-items: center;  
+}
+
+#h1admin{
+    margin-top: 5rem;
+}
+
+#a-crear{
+    margin: 10px;
+}
+
